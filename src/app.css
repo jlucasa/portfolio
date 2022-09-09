@@ -1,3 +1,6 @@
+@import "/fonts/dm-mono-webfont/stylesheet.css";
+@import "/fonts/dm-sans-webfont/stylesheet.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

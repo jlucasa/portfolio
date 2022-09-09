@@ -2,7 +2,7 @@
 
 </script>
 
-<nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+<nav class="flex absolute items-center justify-between flex-wrap bg-teal-500 w-screen p-6">
     <img class="w-48 h-8 mr-8" src="/jared-amen-mono-logo-white.svg" alt="Jared Amen Mono Logo" />
     <div class="block lg:hidden">
       <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -22,7 +22,7 @@
         </a>
       </div>
       <div>
-        <a href="/JAmenCurrentResume.pdf" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white lg:mt-0" download>Download my resume!</a>
+        <a href="/JAmenCurrentResume.pdf" class="font-display inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white lg:mt-0" download>Download my resume!</a>
       </div>
     </div>
 </nav>
