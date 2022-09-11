@@ -7,8 +7,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      display: ['dm_monoregular', ...defaultTheme.fontFamily.mono],
-      body: ['dm_sansregular', ...defaultTheme.fontFamily.sans],
+      display: ['DM Mono', ...defaultTheme.fontFamily.mono],
+      body: ['DM Sans', ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [],

@@ -1,6 +1,88 @@
-@import "/fonts/dm-mono-webfont/stylesheet.css";
-@import "/fonts/dm-sans-webfont/stylesheet.css";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+  font-family: "DM Mono";
+  src: url('/fonts/dm-mono/DMMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Mono";
+  src: url('/fonts/dm-mono/DMMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Mono";
+  src: url('/fonts/dm-mono/DMMono-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Mono";
+  src: url('/fonts/dm-mono/DMMono-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DM Mono";
+  src: url('/fonts/dm-mono/DMMono-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DM Mono";
+  src: url('/fonts/dm-mono/DMMono-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url('/fonts/dm-sans/DMSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url('/fonts/dm-sans/DMSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url('/fonts/dm-sans/DMSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url('/fonts/dm-sans/DMSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url('/fonts/dm-sans/DMSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url('/fonts/dm-sans/DMSans-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
