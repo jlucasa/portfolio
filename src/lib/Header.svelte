@@ -10,7 +10,7 @@
       </button>
     </div>
     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto sm:hidden">
-      <div class="text-sm lg:flex-grow">
+      <div class="text-sm font-body lg:flex-grow">
         <a href="#responsive-header" class="block lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
           Education
         </a>
@@ -21,7 +21,10 @@
           Skills
         </a>
       </div>
-      <div class="mr-4">
+      <div class="mr-4 space-x-4">
+        <a href="https://www.linkedin.com/in/jared-amen">
+            <i class="fa-brands fa-linkedin text-teal-200 text-xl hover:text-white" />
+        </a>
         <a href="https://github.com/jlucasa">
             <i class="fa-brands fa-github text-teal-200 text-xl hover:text-white" />
         </a>
