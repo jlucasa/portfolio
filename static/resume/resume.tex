@@ -1,0 +1,623 @@
+%----------------------------------------------------------------------------------------
+%   
+%   SUPER COOL RESUME TEMPLATE
+%
+%   Adapted from Overleaf Default Resume Template by Spencer Elkington, for the
+%   purposes of the Triangle Member Education Program.
+%
+%   Welcome to your new resume! I'll be annotating how to apply the concepts
+%   from our resume workshop below.
+%
+%   SOME BASICS:
+%   
+%   Anything with a '%' (percent sign) before it is COMMENTED CODE. This will keep
+%   it from appearing in the final LaTeX render. I use it for two reasons:
+%
+%       1. Making comments like these.
+%       2. Omitting things from my resume that I don't want NOW, but may want LATER.
+%
+%   Things will come and go from your resume - some experiences you have may not
+%   feel applicable to a job you're currently applying for - DO NOT DELETE THEM.
+%   You never know when experience may become relevant again!
+%
+%   COMMENT IT OUT USING '%', because then you can whip out your experience again
+%   when you need it!
+%
+%   Also, sometimes it's a cool confidence booster to uncomment everything and see
+%   all the neat stuff you've done so far in your professional life :)
+%
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%
+%   These are some document-wide settings and extra LaTeX packages that you may
+%   want to use for your resume. Here, you can adjust:
+%       -   Margin Sizes
+%       -   Indentation
+%       -   Hyperlink Appearance
+%
+%   You will also use this section to put your NAME and CONTACT INFORMATION. This
+%   stuff is very very important and I would highly recommend keeping the format
+%   fairly similar. This is based on advice I've received from our alumni and other
+%   job recruiters.
+%
+%   A NOTE ON FORMATTING: Your resume should NEVER EVER EVER be more than ONE PAGE.
+%                         
+%                         Muliple pages is best left to a CV, and unless you are
+%                         a highly-qualified individual (read: decades of experience
+%                         in your field) you really should leave it to ONE PAGE.
+%
+%----------------------------------------------------------------------------------------
+
+% Use the custom resume.cls style
+\documentclass{resume} 
+
+% Document margins
+\usepackage[left=0.75in,    top=0.4in,  right=0.75in,   bottom=0.3in]{geometry} 
+
+% Stuff for setting default indentation for new paragraphs
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
+% Package for proper item listing
+\usepackage{enumitem}
+
+% Package for... changing pages? I'm not too certain, and I'm not going to look it up right now.
+\usepackage{changepage}
+
+% Package for another thing I don't know about and will not look up right now.
+\usepackage{parskip}
+
+% Package for multiple columns! I'm not even sure what this is being used for. :)
+\usepackage{multicol}
+
+%-----------------------------------------
+%
+%   NOTE:
+%   
+%   I personally like having hyperlinks to the neat stuff that I do in my resume! Especially
+%   if you do not have a portfolio website, it's a fun way to directly connect digital viewers
+%   of your resume to the stuff that you've done.
+%
+%   NOT EVERYBODY FEELS THIS WAY. It is up to your discretion whether or not you use
+%   hyperlinks.
+%
+%   My advice, though:
+%       - Keep hyperlinks set to a dark, neutral color. This will make them non-abrasive
+%         compared to the black of the rest of your text, AND will make them appear normal
+%         should anybody print out your resume.
+%
+%-----------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,    % Flag for whether links should be a different color
+    linkcolor=blue,     % Color of in-page links (not used)
+    filecolor=magenta,  % Color of local filesystem links (not used)
+    urlcolor=blue,      % Color of web links (DEFINITELY USED!)
+}
+
+%------------------------------------------
+%
+%   CONTACT INFO:
+%
+%   DEFINITELY INCLUDE:
+%       - Name
+%       - Email
+%       - Phone #
+%
+%   PROBABLY INCLUDE:
+%       - ZIP Code
+%       - City
+%       - LinkedIn
+%       - Personal Website (such as GitHub, or an actual portfolio website
+%                           for all of you tryhards out there.)
+%
+%------------------------------------------
+\name{Jared Amen} 
+\address{Salt Lake City, UT \\
+         (208)-705-5146}
+\address{
+    %
+    % NOTE: I include some fancy stuff in the link to my email that will automatically fill certain fields. CHANGE THIS.
+    %
+    % ORDER FOR LINKS: \href{ACTUAL LINK}{TEXT FOR LINK}. I choose to make the text the same as the URL, minus HTTPS://
+    %
+    \href{mailto:amen.jaredl@gmail.com}
+         {amen.jaredl@gmail.com} \\ 
+    \href{https://linkedin.com/in/jared-amen}{linkedin.com/in/jared-amen} \\ 
+    \href{https://github.com/jlucasa}{github.com/jlucasa}
+}    
+
+\begin{document}
+
+%---------------------------------------------------------------------------------------
+%
+%	SUMMARY
+%
+%   If you are so inclined, you can put a summary for yourself. MAKE IT BRIEF, like
+%   the tagline of a movie. A longer summary is GREAT for your LinkedIn, but the space
+%   on a resume is usually better suited for things like education and experiences.
+%
+%   Depending on when I want it, I will comment/uncomment this section out.
+%
+%----------------------------------------------------------------------------------------
+
+% \begin{center}
+%     \vspace{-5pt}
+%     {\em Engineer solutions with creative approaches, quantitative insights, and intuitive software design}
+%     \vspace{-2pt}
+% \end{center}
+
+%----------------------------------------------------------------------------------------
+%
+%	EDUCATION SECTION
+%
+%   For a student, this should be the FIRST SECTION on your resume! It's the
+%   signal that lets people know - you're going to be graduated candidate!
+%
+%   DEFINITELY HAVE:
+%       -   Your University
+%       -   Your Major(s), Minors, and Certificates (if applicable)
+%       -   Your graduation date. If you do not know, USE YOUR EXPECTED GRADUATION DATE
+%
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+% TODO: Edit resume.cls to handle formatting better.
+{\bf University of Utah} \hfill {\em GPA: 3.67, Graduated May 2022}
+\vspace{2pt}
+\emph{
+    \\ Bachelor's \& Master's of Science in Computer Science -- Human-Centered Computing Emphasis
+    \\ Teaching Assistant (2021-2022), Vice President of Triangle Engineering Fraternity (2021-2022)
+}
+
+%----------------------------------------------------------------------------------------
+%
+%   RELEVANT TOPICS
+%
+%   The following is subject to debate!
+%
+%   I, the mighty and benevolent creator of this template, like to put my technical
+%   skills under the Education section. As a student, it feels applicable.
+%
+%   It is well within reason to split this into a separate skills section. People
+%   recommend it all the time. Just for them, here's two magic line of code to make it
+%   happen:
+%
+%       \end{rSection}                      % End education
+%       \begin{rSection}{Technical Skills}  % Start Technical Skills
+%
+%   There! Magical!
+%   
+%   This section is, if we're being honest, mostly for the benefit of the bots. Recruiters will
+%   sometimes use an Applicant Tracking System (ATS) to organize resumes. These systems are
+%   built to compare your resume to sets of keywords and, if you don't match the keywords
+%   well enough, then into the digital abyss your resume goes.
+%
+%   The system below is for your benefit! It allows you to organize and hot-swap keywords
+%   that apply to you. Uncomment the keywords that apply best to the job you are applying
+%   for.
+%
+%   To verify you've covered the right keywords, I highly recommend using jobscan.co.
+%   It allows you to check your resume against the job description, to make sure you
+%   have as many of the keywords the ATS may be looking for as possible.
+%
+%   BE AWARE: WHEN YOU ARE COMMENTING/UNCOMMENTING ITEMS, DO NOT LEAVE TRAILING COMMAS.
+%
+%----------------------------------------------------------------------------------------
+
+%------------------------------------------
+%
+%   SKILLS/RELEVANT COURSEWORK
+%       - Class topics (DO NOT PUT CLASS CODES HERE.)
+%       - Independent study subjects
+%       - Soft skills that you happen to be good at.
+%
+%------------------------------------------
+\vspace{-0.3em}
+{\bf Skills:}
+\vspace{-1.83em}
+
+\begin{adjustwidth}{3.5em}{0pt}
+    {\bf Algorithms},
+    {\bf Data Structures},
+    {\bf Human-Computer Interaction},
+    Deep Learning,
+    Natural Language Processing,
+    Databases,
+    Data Analytics,
+    % Machine Learning,
+%    AI,
+%    Artificial Intelligence,
+    Large-Scale Software Applications,
+%    Statistics,
+%    Linear Alg.,
+    Object-Oriented Design
+%    A/V Codecs,
+    % Business Strategy,
+    % Financial Modeling,
+%    Quantitative Analytics,
+    % Econometrics,
+%    A/B Testing,
+%    Game Theory,
+    % Data Mining,
+%    Agile Development,
+    % Quantitative Research
+%    Research
+%    Digital Economics,
+%    Communication,
+%    Technical Writing
+%    Model Back-testing,
+%    OLS Modeling,
+%    Distributed Computing
+    
+\end{adjustwidth}
+
+
+%----------------------------------------------------------------------------------------
+%
+%	LANGUAGES
+%   
+%   Section for programming languages.
+%
+%   Do NOT put a language here unless you would be comfortable white-boarding
+%   or performing basic coding challenges w/o docs in that language!
+%
+%   Additionally, I like to denote languages I am most comfortable with
+%   by adding a (preferred) tag next to it.
+%
+%----------------------------------------------------------------------------------------
+\vspace{-0.4em}
+{\bf Languages:}
+\vspace{-1.83em}
+\begin{adjustwidth}{6em}{0pt}
+    {\bf \href{https://github.com/jlucasa?tab=repositories&q=&type=&language=python&sort=}{Python}}, 
+    {\bf \href{https://github.com/jlucasa?tab=repositories&q=&type=&language=javascript&sort=}{JavaScript}},
+    \href{https://github.com/jlucasa?tab=repositories&q=&type=&language=tex&sort=}{\LaTeX},
+    TypeScript,
+    Java,
+    C,
+    C++,
+    C\#,
+%    Visual Basic,
+    Ruby
+\end{adjustwidth}
+
+%----------------------------------------------------------------------------------------
+%
+%	TECHNOLOGIES
+%
+%   This is a place to list of software/hardware that you are proficient in. Stuff like
+%   a preferred OS, software suites like Adobe, Office, or AutoDesk, common programs
+%   like Git, development platforms like Unity, Unreal, Qt, etc.
+%
+%----------------------------------------------------------------------------------------
+\vspace{-3pt}
+{\bf Technologies:}
+\vspace{-1.83em}
+\begin{adjustwidth}{7em}{0pt}
+    \href{https://github.com/jlucasa?tab=repositories&q=&type=&language=jupyter+notebook&sort=}{Jupyter Notebook},
+    Git,
+    React,
+%    Ubuntu,
+%    CentOS,
+%    RHES,
+    macOS,
+    Windows,
+    bash/zsh/Powershell,
+    Angular,
+    Ruby on Rails,
+    Node.js,
+    GraphQL,
+    D3.js,
+    Keras,
+    Google Cloud Platform,
+    AWS (S3, ECS),
+    MongoDB
+    % FFMPEG,
+%    Travis,
+%    STATA 
+%    Audacity,
+%    Excel Data Model,
+%    FactSet
+
+\end{adjustwidth}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%
+%	WORK EXPERIENCE SECTION
+%
+%   This is the area where you'll put positions you've held at places you've worked for!
+%
+%   Things like company and university jobs should go here. Unpaid research positions can
+%   also go here.
+%
+%   DEFINITELY HAVE:
+%       -   Job Title
+%       -   Location
+%       -   Time Period (Start - End, or Start - Current if you still work there.)
+%       -   1 - 3 XYZ Bullets describing your work and responsibilities
+%
+%   XYZ FORMATTING:
+%
+%   Performed [X], resulting in [Y], using [Z].
+%
+%   X: What you did
+%   Y: Why you did it
+%   Z: How you did it
+%
+%   X and Z are the most important bits - Y is nice if you have quantifiable evidence
+%   of the result of your action.
+%
+%   Remember, you can comment out bits that don't apply to the position you're tailoring
+%   your resume for but DO NOT DELETE THEM. Good XYZ bullets are hard to come by and you
+%   never know when you might need them again.
+%
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+    {\bf Software Engineering Intern, R\&D}, {\em \href{https://www.kantata.com/}{Kantata} (formerly Mavenlink) \hfill Summer 2022}
+    \vspace{-6pt}
+    \begin{itemize}[nosep]
+        \item Resolved $\approx$30 direct support requests for the administrator panel of Kantata's production application to allow new functionality to fetch and filter through millions of account logs, manage custom subdomains, and perform bulk actions on thousands of accounts.
+        \item Wrote 10 pages of detailed, step-by-step in-house documentation for Kantata engineers to use in making configurable tables using their own data provided via GraphQL, lowering the time to create these tables to a scale of $\approx$1 business day.
+    \end{itemize}
+    
+    % {\bf Teaching Assistant}, {\em University of Utah}
+    % \vspace{-6pt}
+    % \begin{adjustwidth}{1em}{0pt}
+    %     {\bf CS 4400} {\em (Computer Systems, Prof. Ben Jones) \hfill Jan 2022 - May 2022}\\
+    %     {\bf CS 1420} {\em (Accel. Intro to Object-Oriented Programming, Prof. Peter Jensen) \hfill Aug 2021 - Dec 2021}
+    % \end{adjustwidth}
+    % \vspace{-3pt}
+    % \begin{itemize}[nosep]
+    %     \item Leveraged skills in C/x86 for CS 4400 and Java for CS 1420 to revise and grade assignments/exams.
+    %     \item Held labs/office hours for students, helping students outside of office hours through Piazza.
+    % \end{itemize}
+    
+    % {\bf Teaching Assistant}, {\em CS 4400 (Computer Systems), University of Utah \hfill Jan 2022 - May 2022}
+    % \vspace{-6pt}
+    % \begin{itemize}[nosep]
+    %     \item Leveraged skills in C and x86 to revise/grade assignments/exams and hold labs/office hours for students, helping students outside of office hours through Piazza.
+    % \end{itemize}
+    
+    % {\bf Teaching Assistant}, {\em CS 1420 (Accel. Intro to OOP), University of Utah \hfill Aug 2021 - Dec 2021}
+    % \vspace{-6pt}
+    % \begin{itemize}[nosep]
+    %     \item  Taught an accelerated introduction to object-oriented programming in Java to first-year students through a combination of labs and one-on-one assistance through office hours and Piazza.
+    % \end{itemize}
+    
+    {\bf Project Lead}, {\em \href{https://civilmedia.webflow.io/}{Civil Media} \hfill Oct 2020 - Sep 2021}
+    \vspace{-6pt}
+    \begin{itemize}[nosep]
+        \item Lead a team of three to design a website with structured, balanced, interactive modules on controversial topics, used by K-12 educators across the US to improve lesson plans on these topics.
+        \item Design and improve upon an AGILE approach to project management, which improved time engagement as recorded by Jira by $\approx$5 hours per member per week.
+    \end{itemize}
+
+    % {\bf Software Engineering Intern}, {\em University of Utah \hfill Jul 2019 - Apr 2020, Aug 2020 - Aug 2021}
+    % \vspace{-6pt}
+    % \begin{itemize}[nosep]
+    %     \item Worked in a team of four to develop a new C\# backend and React frontend for the interfacing tool that the university's health departments use to access student/staff/faculty data, resulting in $\approx$2x increased speed when using the web app.
+    % \end{itemize}
+
+    {\bf Software Engineering Intern}, {\em \href{https://www.instructure.com/}{Instructure} \hfill Summer 2020}
+    \vspace{-6pt}
+    \begin{itemize}[nosep]
+        \item Used A11y guidelines to provide screen readers compatible with JAWS and VoiceOver for Canvas, an LMS used by 4,000 institutions across the world.
+        \item Developed a new rich-content editor powered by \href{https://www.tiny.cloud/}{TinyMCE}, using in-house plugins written in Ruby on Rails and React for media uploading, allowing for existing database setups to remain.
+        % \item Built a {\bf Kubernetes/Docker} PaaS to simplify deployment of science apps on distributed systems
+        % \item Iteratively redesigned project site in {\bf React.js, HTML \& CSS} and monitor Google Analytics for site
+        %\item Researched the use of provisioning software, such as {\bf Foreman}, to provision new server clusters
+    \end{itemize}
+    
+    % {\bf Undergraduate Research Assistant}, {\em University of Utah} \hfill {\em October 2019 - January 2020}
+    % \vspace{1pt}
+    % \\ Advisor: Dr. Blair D. Sullivan, Research Team of 4
+    % \vspace{-6pt}
+    % \begin{itemize}[nosep]
+    %     \item Provided optimized C++ translations from Python for a way to ``turbocharge'' odd cycle transversal algorithms on a graph with fixed parameter tractability
+    %     \item Achieved an approximate 25\% performance boost over Python implementation.
+    % \end{itemize}
+    
+\end{rSection}
+
+%-----------------------------------------------------------------------------------------------
+%
+%   PROJECTS
+%
+%   This is a place to put big, cool things that you've worked on and have something to show for.  
+%
+%   Here, I personally like to put three things:
+%       - Personal Projects
+%       - Open-Ended School Projects
+%       - Demonstrable Work Projects
+%
+%   This functions as a micro-portfolio of your work. If you feel comfortable showing it off,
+%   put it here.
+%
+%   I also highly recommend putting links for projects, wherever applicable.
+%
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Notable Projects}
+
+    \href{https://github.com/jlucasa/style-transfer-vis}{{\bf Style Transfer Workbench}}, {\em Team of 3} {\em \hfill Dec 2021}
+    \vspace{-6pt}
+    \begin{itemize}[nosep]
+        \item Developed a machine learning workbench prototype for visually interpreting and exploring activation values in the style transfer problem using SqueezeNet Neural Network Architecture
+        \item Specialized in user interface, utilizing Streamlit and Google Colab to provide a clean user experience superpowered by GPUs making the style transfer process tractable.
+    \end{itemize}
+
+    % \href{https://github.com/No-Losing-Parses/src}{{\bf Question/Answering System}}, {\em Team of 2, 1st place out of $\approx$30 teams} {\em \hfill Nov 2020}
+    % \vspace{-6pt}
+    % \begin{itemize}[nosep]
+    %     \item Created a single-document question/answering system used on news articles for a graduate-level natural language processing class competition at the University of Utah
+    %     \item Achieved performance boosts of $\approx$10\% through enhanced phrase extraction that leveraged the cosine similarity between the embeddings of tokens in questions and tokens in potential answers
+    % \end{itemize}
+    
+    {\bf \href{https://bdv-2021.web.app}{Bank Document Verifier}}, {\em Team of 3, 2nd place out of $\approx$40 teams} {\em \hfill Sep 2020 - May 2021}
+    \vspace{-6pt}
+    \begin{itemize}[nosep]
+        \item Created a web program in collaboration with \href{https://enerbank.com/}{Enerbank USA} for the automatic detection of fraud in applications for loans from financial institutions
+        \item Specialized in a comprehensive user management panel for administrators of the program, and created broad security protocols that fit Enerbank's requirements, reducing the cost-of-use by $\approx$75\% by only issuing API calls when necessary
+    \end{itemize}
+    
+    % {\bf \href{https://github.com/jlucasa/link-waiter}{Link-Based ``Finder'' Discord Bot}} {\em \hfill September 2020 - Current}
+    % \vspace{-6pt}
+    % \begin{itemize}[nosep]
+    %     \item Created in discord.py for my senior project group's Discord server
+    %     \item Utilizes AWS S3 to store and retrieve links in simple JSON files for the future, and has improved project workflow in the group
+    % \end{itemize}
+    
+    % \href{https://devpost.com/software/beethoven-t9ud86}{\bf Beethoven}, {\em 2nd place out of $\approx$30 teams
+    % \hfill HackTheU 2019}
+    % \vspace{-6pt}
+    % \begin{itemize}[nosep]
+    %     \item Designed a closed captioning and audio transcription service for deaf and hard-of-hearing students
+    %     \item Created a {\bf Node.js \& React} web application for peer-to-peer text \& audio streaming via {\bf WebRTC}
+    % \end{itemize}
+    
+    % \href{https://www.linkedin.com/feed/update/urn:li:activity:6603722406240628736/}{\bf LED Music Visualizer}
+    % \vspace{-6pt}
+    % \begin{itemize}[nosep]
+    %   \item Created a {\bf C++/Arduino}/PlatformIO system for real-time music data analysis and visualizations
+    %   \item Designed a {\bf Python} music visualization tool for prototyping analysis \& visualization algorithms
+    % \end{itemize}
+
+    % \href{https://www.roblox.com/games/272941/Robloxaville}{\bf Robloxaville}
+    % \vspace{-6pt}
+    % \begin{itemize}[nosep]
+    %   \item Remastered a popular {\bf Lua} game on the ROBLOX game platform supporting both PC \& mobile gameplay
+    %   % \item Engineered project to patch security flaws and emphasize project maintainability and scalability 
+    % \end{itemize}
+    
+%    {\bf Google Assistant Transit Tracker}
+%    \hfill {\em HackTheU 2018}
+%    \vspace{-6pt}
+%    \begin{itemize}[nosep]
+%       % \item Created a Google DialogFlow application to retrieve local bus schedules via Google Assistant
+%      \item Parsed and converted Google DialogFlow voice commands to {\bf SQL} queries of UTA schedule databases
+%      % \item Deployed application back-end to {\bf Firebase} in order to run all back-end code on the cloud
+%    \end{itemize}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------------
+%
+%   Activities
+%
+%   This is a great place to put things that you've put time into that aren't necessarily
+%   a job or paid opportunity. This includes:
+%       - Organizations
+%       - Clubs
+%       - Meetup groups
+%       - Volunteering
+%       - Leadership positions
+%
+%   Be certain, though, that you've participated in big things through these! Don't just put
+%   that you were a member - talk about what you did!
+%
+%   NOTE FOR TRIANGLE FRATERNITY MEMBERS: This is a great place to put leadership positions,
+%                                         like chairs and exec roles!
+%
+%                                         Because all executive positions are Vice President
+%                                         roles, typically "Vice President" will suffice. If
+%                                         you really want to get specific, you could say
+%                                         "VP External/Internal/Treasury/etc.", but I personally
+%                                         don't feel the extra flair is necessary.
+%
+%                                         Additionally, THIS IS A FANTASTIC REASON TO GET
+%                                         HANDS-ON IN OUR CHAPTER! The perk of being part
+%                                         of a young organization is that you can make a
+%                                         massive impact for everybody, and brag about it
+%                                         here!
+%   
+%-----------------------------------------------------------------------------------------------
+
+% \begin{rSection}{Activities}
+
+    % {\bf Vice President}, {\em Triangle Engineering Fraternity \hfill April 2020 - Current}
+    % \vspace{-6pt}
+    % \begin{itemize}[nosep]
+    %     \item Set up and administrate a growing Discord server of $>$500 students and faculty at the University of Utah which provides academic, professional, and social resources for members of the fraternity and community.
+    %     \item Work in a team of three to develop features for a Discord bot written in TypeScript for the server, including automated class enrollment and verification of student/faculty status.
+    %     % \item Teach professional/personal development curriculum for an organization of roughly 40 members
+    %     % \item Designed and presented
+    %     %     \href{https://docs.google.com/presentation/d/1fGTdp4_FkZzHyAAKyMnpKdpii130kyLaFquVrfw7vdY/edit?usp=sharing}
+    %     %          {improvements on management style}
+    %     %     to cut logistical meetings by 75\%
+    % \end{itemize}
+    
+    % {\bf Director of Marketing}, {\em HackTheU \hfill January 2020 - Current}
+    % \vspace{-6pt}
+    % \begin{itemize}[nosep]
+    %     \item Direct the marketing division of the committee that runs Utah's largest hackathon in preparation for a small virtual hackathon in March 2020 and a large virtual hackathon in October 2020.
+    %     \item Create a strong digital marketing platform with connections to media outlets throughout the Salt Lake Metropolitan area and companies such as Galileo, esri, L3Harris, and MLH.
+    % \end{itemize}
+    
+%    \href{https://stem.utah.gov/students/utah-stem-ambassador-program/}{\bf STEM Ambassador,} {\em Utah STEM Action Center \hfill April 2019 - Current}
+%    \vspace{-6pt}
+%    \begin{itemize}[nosep]
+%        \item Inform educators of STEM opportunities and engage students with science and technology demonstrations
+%        % \item Analyzed student testing and progression data to curate \& teach individualized learning plans
+%    \end{itemize}
+
+    % {\bf Center Director}, {\em Mathnasium of Utah \hfill April 2018 - November 2018}
+    % \vspace{-6pt}
+    % \begin{itemize}[nosep]
+    %     \item Directed the strategy and operations of a K-12 math tutoring center with 80 enrolled students
+    %     % \item Analyzed student testing and progression data to curate \& teach individualized learning plans
+    % \end{itemize}
+    
+    % {\bf Genome Analysis Tutor}, {\em University of Utah \hfill Fall Semester, 2017}
+    % \vspace{-6pt}
+    % \begin{itemize}[nosep]
+    %   \item Organized \& lead a free {\bf Python} tutoring group for a \href{http://content.csbs.utah.edu/~rogers/ant5221/lab/manual.pdf}{graduate anthropology course}
+    %   % \item Utilized stochastic algorithms to track genetic drift in HapMap genomic datasets
+    % \end{itemize}
+
+% \end{rSection}
+
+%-----------------------------------
+%
+%   REFERENCES
+%
+%   So, typically, references shouldn't go directly on your resume. If the recruiter would
+%   like a reference for something on your application, they would either a) ask you directly
+%   or b) scout a service like LinkedIn for that sort of thing.
+%
+%   Also, there have been arguments that something like "References Upon Request" is implied.
+%   I personally don't see any harm in doing it - it's a very short line item. However, your
+%   mileage may vary.
+%
+%-----------------------------------
+\vspace{8pt}
+\begin{center}
+    {\em References upon request}
+\end{center}
+
+\end{document}
+
+%-----------------------------------
+%
+%   METADATA
+%
+%   This is a personal testing point - I was curious to see if ATS picks up
+%   the .pdf metadata as part of the main resume or not. Results were inconclusive -
+%   use at your own risk.
+%  
+%-----------------------------------
+\hypersetup{
+    pdftitle={Jared Amen Resume},
+    pdfsubject={Resume for Software Engineering, Quantitative Analytics, and General Tomfoolery},
+    pdfauthor={Spencer Elkington},
+    pdfkeywords={
+    
+                }
+}
