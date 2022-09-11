@@ -30,7 +30,7 @@
         </a>
       </div>
       <div>
-        <a href="/JAmenCurrentResume.pdf" class="font-display inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white lg:mt-0" download>Download my resume!</a>
+        <a href="/resume/JAmenCurrentResume.pdf" class="font-display inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white lg:mt-0" download>Download my resume!</a>
       </div>
     </div>
 </nav>
