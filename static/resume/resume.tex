@@ -1,57 +1,3 @@
-%----------------------------------------------------------------------------------------
-%   
-%   SUPER COOL RESUME TEMPLATE
-%
-%   Adapted from Overleaf Default Resume Template by Spencer Elkington, for the
-%   purposes of the Triangle Member Education Program.
-%
-%   Welcome to your new resume! I'll be annotating how to apply the concepts
-%   from our resume workshop below.
-%
-%   SOME BASICS:
-%   
-%   Anything with a '%' (percent sign) before it is COMMENTED CODE. This will keep
-%   it from appearing in the final LaTeX render. I use it for two reasons:
-%
-%       1. Making comments like these.
-%       2. Omitting things from my resume that I don't want NOW, but may want LATER.
-%
-%   Things will come and go from your resume - some experiences you have may not
-%   feel applicable to a job you're currently applying for - DO NOT DELETE THEM.
-%   You never know when experience may become relevant again!
-%
-%   COMMENT IT OUT USING '%', because then you can whip out your experience again
-%   when you need it!
-%
-%   Also, sometimes it's a cool confidence booster to uncomment everything and see
-%   all the neat stuff you've done so far in your professional life :)
-%
-%----------------------------------------------------------------------------------------
-
-
-%----------------------------------------------------------------------------------------
-%
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%
-%   These are some document-wide settings and extra LaTeX packages that you may
-%   want to use for your resume. Here, you can adjust:
-%       -   Margin Sizes
-%       -   Indentation
-%       -   Hyperlink Appearance
-%
-%   You will also use this section to put your NAME and CONTACT INFORMATION. This
-%   stuff is very very important and I would highly recommend keeping the format
-%   fairly similar. This is based on advice I've received from our alumni and other
-%   job recruiters.
-%
-%   A NOTE ON FORMATTING: Your resume should NEVER EVER EVER be more than ONE PAGE.
-%                         
-%                         Muliple pages is best left to a CV, and unless you are
-%                         a highly-qualified individual (read: decades of experience
-%                         in your field) you really should leave it to ONE PAGE.
-%
-%----------------------------------------------------------------------------------------
-
 % Use the custom resume.cls style
 \documentclass{resume} 
 
@@ -62,35 +8,11 @@
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
-% Package for proper item listing
 \usepackage{enumitem}
-
-% Package for... changing pages? I'm not too certain, and I'm not going to look it up right now.
 \usepackage{changepage}
-
-% Package for another thing I don't know about and will not look up right now.
 \usepackage{parskip}
-
-% Package for multiple columns! I'm not even sure what this is being used for. :)
 \usepackage{multicol}
 
-%-----------------------------------------
-%
-%   NOTE:
-%   
-%   I personally like having hyperlinks to the neat stuff that I do in my resume! Especially
-%   if you do not have a portfolio website, it's a fun way to directly connect digital viewers
-%   of your resume to the stuff that you've done.
-%
-%   NOT EVERYBODY FEELS THIS WAY. It is up to your discretion whether or not you use
-%   hyperlinks.
-%
-%   My advice, though:
-%       - Keep hyperlinks set to a dark, neutral color. This will make them non-abrasive
-%         compared to the black of the rest of your text, AND will make them appear normal
-%         should anybody print out your resume.
-%
-%-----------------------------------------
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,    % Flag for whether links should be a different color
@@ -101,30 +23,13 @@
 
 %------------------------------------------
 %
-%   CONTACT INFO:
-%
-%   DEFINITELY INCLUDE:
-%       - Name
-%       - Email
-%       - Phone #
-%
-%   PROBABLY INCLUDE:
-%       - ZIP Code
-%       - City
-%       - LinkedIn
-%       - Personal Website (such as GitHub, or an actual portfolio website
-%                           for all of you tryhards out there.)
+%   CONTACT INFO
 %
 %------------------------------------------
 \name{Jared Amen} 
-\address{Salt Lake City, UT \\
+\address{Salt Lake City, UT 84111 \\
          (208)-705-5146}
 \address{
-    %
-    % NOTE: I include some fancy stuff in the link to my email that will automatically fill certain fields. CHANGE THIS.
-    %
-    % ORDER FOR LINKS: \href{ACTUAL LINK}{TEXT FOR LINK}. I choose to make the text the same as the URL, minus HTTPS://
-    %
     \href{mailto:amen.jaredl@gmail.com}
          {amen.jaredl@gmail.com} \\ 
     \href{https://linkedin.com/in/jared-amen}{linkedin.com/in/jared-amen} \\ 
@@ -137,12 +42,6 @@
 %
 %	SUMMARY
 %
-%   If you are so inclined, you can put a summary for yourself. MAKE IT BRIEF, like
-%   the tagline of a movie. A longer summary is GREAT for your LinkedIn, but the space
-%   on a resume is usually better suited for things like education and experiences.
-%
-%   Depending on when I want it, I will comment/uncomment this section out.
-%
 %----------------------------------------------------------------------------------------
 
 % \begin{center}
@@ -153,15 +52,7 @@
 
 %----------------------------------------------------------------------------------------
 %
-%	EDUCATION SECTION
-%
-%   For a student, this should be the FIRST SECTION on your resume! It's the
-%   signal that lets people know - you're going to be graduated candidate!
-%
-%   DEFINITELY HAVE:
-%       -   Your University
-%       -   Your Major(s), Minors, and Certificates (if applicable)
-%       -   Your graduation date. If you do not know, USE YOUR EXPECTED GRADUATION DATE
+%	EDUCATION
 %
 %----------------------------------------------------------------------------------------
 
@@ -175,49 +66,6 @@
     \\ Teaching Assistant (2021-2022), Vice President of Triangle Engineering Fraternity (2021-2022)
 }
 
-%----------------------------------------------------------------------------------------
-%
-%   RELEVANT TOPICS
-%
-%   The following is subject to debate!
-%
-%   I, the mighty and benevolent creator of this template, like to put my technical
-%   skills under the Education section. As a student, it feels applicable.
-%
-%   It is well within reason to split this into a separate skills section. People
-%   recommend it all the time. Just for them, here's two magic line of code to make it
-%   happen:
-%
-%       \end{rSection}                      % End education
-%       \begin{rSection}{Technical Skills}  % Start Technical Skills
-%
-%   There! Magical!
-%   
-%   This section is, if we're being honest, mostly for the benefit of the bots. Recruiters will
-%   sometimes use an Applicant Tracking System (ATS) to organize resumes. These systems are
-%   built to compare your resume to sets of keywords and, if you don't match the keywords
-%   well enough, then into the digital abyss your resume goes.
-%
-%   The system below is for your benefit! It allows you to organize and hot-swap keywords
-%   that apply to you. Uncomment the keywords that apply best to the job you are applying
-%   for.
-%
-%   To verify you've covered the right keywords, I highly recommend using jobscan.co.
-%   It allows you to check your resume against the job description, to make sure you
-%   have as many of the keywords the ATS may be looking for as possible.
-%
-%   BE AWARE: WHEN YOU ARE COMMENTING/UNCOMMENTING ITEMS, DO NOT LEAVE TRAILING COMMAS.
-%
-%----------------------------------------------------------------------------------------
-
-%------------------------------------------
-%
-%   SKILLS/RELEVANT COURSEWORK
-%       - Class topics (DO NOT PUT CLASS CODES HERE.)
-%       - Independent study subjects
-%       - Soft skills that you happen to be good at.
-%
-%------------------------------------------
 \vspace{-0.3em}
 {\bf Skills:}
 \vspace{-1.83em}
@@ -230,47 +78,10 @@
     Natural Language Processing,
     Databases,
     Data Analytics,
-    % Machine Learning,
-%    AI,
-%    Artificial Intelligence,
     Large-Scale Software Applications,
-%    Statistics,
-%    Linear Alg.,
     Object-Oriented Design
-%    A/V Codecs,
-    % Business Strategy,
-    % Financial Modeling,
-%    Quantitative Analytics,
-    % Econometrics,
-%    A/B Testing,
-%    Game Theory,
-    % Data Mining,
-%    Agile Development,
-    % Quantitative Research
-%    Research
-%    Digital Economics,
-%    Communication,
-%    Technical Writing
-%    Model Back-testing,
-%    OLS Modeling,
-%    Distributed Computing
-    
 \end{adjustwidth}
 
-
-%----------------------------------------------------------------------------------------
-%
-%	LANGUAGES
-%   
-%   Section for programming languages.
-%
-%   Do NOT put a language here unless you would be comfortable white-boarding
-%   or performing basic coding challenges w/o docs in that language!
-%
-%   Additionally, I like to denote languages I am most comfortable with
-%   by adding a (preferred) tag next to it.
-%
-%----------------------------------------------------------------------------------------
 \vspace{-0.4em}
 {\bf Languages:}
 \vspace{-1.83em}
@@ -287,15 +98,6 @@
     Ruby
 \end{adjustwidth}
 
-%----------------------------------------------------------------------------------------
-%
-%	TECHNOLOGIES
-%
-%   This is a place to list of software/hardware that you are proficient in. Stuff like
-%   a preferred OS, software suites like Adobe, Office, or AutoDesk, common programs
-%   like Git, development platforms like Unity, Unreal, Qt, etc.
-%
-%----------------------------------------------------------------------------------------
 \vspace{-3pt}
 {\bf Technologies:}
 \vspace{-1.83em}
@@ -304,8 +106,6 @@
     Git,
     React,
 %    Ubuntu,
-%    CentOS,
-%    RHES,
     macOS,
     Windows,
     bash/zsh/Powershell,
@@ -318,12 +118,6 @@
     Google Cloud Platform,
     AWS (S3, ECS),
     MongoDB
-    % FFMPEG,
-%    Travis,
-%    STATA 
-%    Audacity,
-%    Excel Data Model,
-%    FactSet
 
 \end{adjustwidth}
 
@@ -331,18 +125,8 @@
 
 %----------------------------------------------------------------------------------------
 %
-%	WORK EXPERIENCE SECTION
-%
-%   This is the area where you'll put positions you've held at places you've worked for!
-%
-%   Things like company and university jobs should go here. Unpaid research positions can
-%   also go here.
-%
-%   DEFINITELY HAVE:
-%       -   Job Title
-%       -   Location
-%       -   Time Period (Start - End, or Start - Current if you still work there.)
-%       -   1 - 3 XYZ Bullets describing your work and responsibilities
+%   EXPERIENCE 
+%   ----------
 %
 %   XYZ FORMATTING:
 %
@@ -354,10 +138,6 @@
 %
 %   X and Z are the most important bits - Y is nice if you have quantifiable evidence
 %   of the result of your action.
-%
-%   Remember, you can comment out bits that don't apply to the position you're tailoring
-%   your resume for but DO NOT DELETE THEM. Good XYZ bullets are hard to come by and you
-%   never know when you might need them again.
 %
 %----------------------------------------------------------------------------------------
 
@@ -431,18 +211,6 @@
 %
 %   PROJECTS
 %
-%   This is a place to put big, cool things that you've worked on and have something to show for.  
-%
-%   Here, I personally like to put three things:
-%       - Personal Projects
-%       - Open-Ended School Projects
-%       - Demonstrable Work Projects
-%
-%   This functions as a micro-portfolio of your work. If you feel comfortable showing it off,
-%   put it here.
-%
-%   I also highly recommend putting links for projects, wherever applicable.
-%
 %-----------------------------------------------------------------------------------------------
 \begin{rSection}{Notable Projects}
 
@@ -507,39 +275,6 @@
 
 \end{rSection}
 
-
-%----------------------------------------------------------------------------------------------
-%
-%   Activities
-%
-%   This is a great place to put things that you've put time into that aren't necessarily
-%   a job or paid opportunity. This includes:
-%       - Organizations
-%       - Clubs
-%       - Meetup groups
-%       - Volunteering
-%       - Leadership positions
-%
-%   Be certain, though, that you've participated in big things through these! Don't just put
-%   that you were a member - talk about what you did!
-%
-%   NOTE FOR TRIANGLE FRATERNITY MEMBERS: This is a great place to put leadership positions,
-%                                         like chairs and exec roles!
-%
-%                                         Because all executive positions are Vice President
-%                                         roles, typically "Vice President" will suffice. If
-%                                         you really want to get specific, you could say
-%                                         "VP External/Internal/Treasury/etc.", but I personally
-%                                         don't feel the extra flair is necessary.
-%
-%                                         Additionally, THIS IS A FANTASTIC REASON TO GET
-%                                         HANDS-ON IN OUR CHAPTER! The perk of being part
-%                                         of a young organization is that you can make a
-%                                         massive impact for everybody, and brag about it
-%                                         here!
-%   
-%-----------------------------------------------------------------------------------------------
-
 % \begin{rSection}{Activities}
 
     % {\bf Vice President}, {\em Triangle Engineering Fraternity \hfill April 2020 - Current}
@@ -560,41 +295,11 @@
     %     \item Direct the marketing division of the committee that runs Utah's largest hackathon in preparation for a small virtual hackathon in March 2020 and a large virtual hackathon in October 2020.
     %     \item Create a strong digital marketing platform with connections to media outlets throughout the Salt Lake Metropolitan area and companies such as Galileo, esri, L3Harris, and MLH.
     % \end{itemize}
-    
-%    \href{https://stem.utah.gov/students/utah-stem-ambassador-program/}{\bf STEM Ambassador,} {\em Utah STEM Action Center \hfill April 2019 - Current}
-%    \vspace{-6pt}
-%    \begin{itemize}[nosep]
-%        \item Inform educators of STEM opportunities and engage students with science and technology demonstrations
-%        % \item Analyzed student testing and progression data to curate \& teach individualized learning plans
-%    \end{itemize}
-
-    % {\bf Center Director}, {\em Mathnasium of Utah \hfill April 2018 - November 2018}
-    % \vspace{-6pt}
-    % \begin{itemize}[nosep]
-    %     \item Directed the strategy and operations of a K-12 math tutoring center with 80 enrolled students
-    %     % \item Analyzed student testing and progression data to curate \& teach individualized learning plans
-    % \end{itemize}
-    
-    % {\bf Genome Analysis Tutor}, {\em University of Utah \hfill Fall Semester, 2017}
-    % \vspace{-6pt}
-    % \begin{itemize}[nosep]
-    %   \item Organized \& lead a free {\bf Python} tutoring group for a \href{http://content.csbs.utah.edu/~rogers/ant5221/lab/manual.pdf}{graduate anthropology course}
-    %   % \item Utilized stochastic algorithms to track genetic drift in HapMap genomic datasets
-    % \end{itemize}
-
 % \end{rSection}
 
 %-----------------------------------
 %
 %   REFERENCES
-%
-%   So, typically, references shouldn't go directly on your resume. If the recruiter would
-%   like a reference for something on your application, they would either a) ask you directly
-%   or b) scout a service like LinkedIn for that sort of thing.
-%
-%   Also, there have been arguments that something like "References Upon Request" is implied.
-%   I personally don't see any harm in doing it - it's a very short line item. However, your
-%   mileage may vary.
 %
 %-----------------------------------
 \vspace{8pt}
@@ -607,17 +312,14 @@
 %-----------------------------------
 %
 %   METADATA
-%
-%   This is a personal testing point - I was curious to see if ATS picks up
-%   the .pdf metadata as part of the main resume or not. Results were inconclusive -
-%   use at your own risk.
 %  
 %-----------------------------------
 \hypersetup{
     pdftitle={Jared Amen Resume},
-    pdfsubject={Resume for Software Engineering, Quantitative Analytics, and General Tomfoolery},
-    pdfauthor={Spencer Elkington},
+    pdfsubject={Software Engineering, Natural Language Processing, Social Computing},
+    pdfauthor={Jared Amen},
     pdfkeywords={
+
     
                 }
 }
