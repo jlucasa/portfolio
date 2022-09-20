@@ -2,7 +2,7 @@
   import CalendlyButton from './CalendlyButton.svelte';
 </script>
 
-<nav class="flex absolute items-center justify-between flex-wrap bg-teal-500 w-screen p-6">
+<nav class="flex absolute items-center justify-between flex-wrap bg-teal-500 w-screen p-6 drop-shadow-lg">
     <img class="w-48 h-8 mr-8" src="/jared-amen-mono-logo-white.svg" alt="Jared Amen Mono Logo" />
     <div class="block lg:hidden">
       <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
