@@ -14,6 +14,15 @@
 
 <div class="absolute h-screen w-screen overflow-hidden left-0 right-0 top-0 bottom-0" hidden={isHidden} on:click={toggleMenu}>
     <div class="flex h-full w-full place-content-center place-items-center bg-black/25">
-        <iframe src="https://calendly.com/jared-amen" width="25%" height="950" class="drop-shadow-xl rounded-lg" scrolling="no" frameborder="0" hidden={isHidden} />
+        <iframe 
+            src="https://calendly.com/jared-amen"
+            title="Schedule a meeting with me using Calendly!"
+            width="25%" 
+            height="950" 
+            class="drop-shadow-xl rounded-lg" 
+            scrolling="no" 
+            frameborder="0" 
+            hidden={isHidden}
+        />
     </div>
 </div>
